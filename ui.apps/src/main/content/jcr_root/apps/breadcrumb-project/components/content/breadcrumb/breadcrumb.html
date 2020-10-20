@@ -1,0 +1,11 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories= 'train-bread'}" />
+<nav 
+	 data-sly-use.breadcrumb="Breadcrumb"
+     data-sly-test="${breadcrumb.listOfPagesInfo.size > 0}">
+    <ul class="breadcrumb" data-sly-list="${breadcrumb.listOfPagesInfo}">
+        <li>
+            <a href="${item.url}" data-sly-unwrap="${!item.active}">${item.title}</a>
+        </li>
+    </ul>
+</nav>

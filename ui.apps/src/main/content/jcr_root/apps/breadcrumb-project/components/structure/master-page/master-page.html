@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body class="page">
+    <sly data-sly-include = "/libs/wcm/core/components/init/init.jsp" data-sly-unwrap />
+        <header>
+    		<sly data-sly-include="header.html" data-sly-unwrap/>
+    	</header>
+        <div data-sly-resource="${'parsys' @ resourceType='wcm/foundation/components/parsys'}"></div>
+    	<footer>
+        	<sly data-sly-include="footer.html" data-sly-unwrap/>
+    	</footer>
+    </body>
+</html>
